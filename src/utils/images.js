@@ -16,10 +16,11 @@ import Work1 from '../assets/work/01.png'
 import Work2 from '../assets/work/02.png'
 import Work3 from '../assets/work/03.png'
 import Work4 from '../assets/work/04.png'
-
+import Logo from '../assets/logo.svg'
 
 
 const images = {
+    Logo,
     AboutImg,
     Brand1,
     Brand2,
@@ -40,4 +41,6 @@ const images = {
     Work4
 }
 
+
+export default images
 
