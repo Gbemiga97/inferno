@@ -1,3 +1,6 @@
+import {FiCompass, FiTool } from 'react-icons/fi'
+import {AiFillTool,   } from 'react-icons/ai'
+
 
 
 const links = [
@@ -24,9 +27,29 @@ const links = [
 ]
 
 
+const steps = [
+    {
+        icon: <FiCompass />,
+        title: 'Project Planning',
+        desc: 'There are many variations of the passages of lorem Ipsum from available, majority.'
+    },
+    {
+        icon: <FiTool />,
+        title: 'Gaining Materials',
+        desc: 'There are many variations of the passages of lorem Ipsum from available, majority.'
+    },
+    {
+        icon: <AiFillTool />,
+        title: 'Project Execution',
+        desc: 'There are many variations of the passages of lorem Ipsum from available, majority.'
+    },
+]
+
+
 
 const data = {
-    links
+    links,
+    steps
 }
 
 

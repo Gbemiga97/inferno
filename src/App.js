@@ -1,4 +1,4 @@
-import { Header, Hero } from "./sections";
+import { About, Header, Hero, Steps } from "./sections";
 
 function App() {
   return (
@@ -6,6 +6,8 @@ function App() {
      <div className="xl:bg-grid xl:bg-center xl:bg-repeat-y fixed top-0 bottom-0 right-0 left-0" />
      <Header />
       <Hero />
+      <Steps />
+      <About />
      <div className="h-[3000px]"/>
     </main>
   );

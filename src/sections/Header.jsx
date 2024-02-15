@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header className="sticky h-[90px] bg-white shadow-xl top-0 z-30">
         <div className="container mx-auto flex justify-between items-center h-full">
-            <Link>
+            <Link spy={true} smooth>
             <img src={images.Logo} alt="logo" />
             </Link>
             <Nav showNav={showNav}/>

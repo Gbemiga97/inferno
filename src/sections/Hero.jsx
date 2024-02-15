@@ -1,4 +1,4 @@
-import { FaArrowRight } from "react-icons/fa6";
+import { Button } from "../components"
 
 
 
@@ -14,9 +14,7 @@ const Hero = () => {
                 <p className="mb-8">
                 There are many variations of the passages of lorem Ipsum from available,variations of the passages. 
                 </p>
-                <button className="btn btn-primary mx-auto xl:mx-0">
-                    Get free estimation <FaArrowRight className="text-accent" />
-                </button>
+               <Button />
             </div>
         </div>
     </section>
