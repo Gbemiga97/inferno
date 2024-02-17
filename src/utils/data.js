@@ -1,5 +1,6 @@
 import {FiCompass, FiTool } from 'react-icons/fi'
 import {AiFillTool,   } from 'react-icons/ai'
+import images from './images'
 
 
 
@@ -46,10 +47,34 @@ const steps = [
 ]
 
 
+const testimonials = [
+    {
+        name: 'Nattasha Mith',
+        location: 'Greenville, USA',
+        img: images.Testimonial1
+    },
+    {
+        name: 'Jessica White',
+        location: 'Oak Ridge, USA',
+        img: images.Testimonial2
+    },
+    {
+        name: 'Mike Davis',
+        location: 'Berlin, Germany',
+        img: images.Testimonial3
+    },
+    {
+        name: 'Olivia Wilson',
+        location: 'Blue Ridge, France',
+        img: images.Testimonial4
+    },
+]
+
 
 const data = {
     links,
-    steps
+    steps,
+    testimonials
 }
 
 

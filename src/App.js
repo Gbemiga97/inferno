@@ -1,4 +1,4 @@
-import { About, Header, Hero, Steps } from "./sections";
+import { About, Header, Hero, Steps, Testimonial } from "./sections";
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <Hero />
       <Steps />
       <About />
+      <Testimonial />
      <div className="h-[3000px]"/>
     </main>
   );
