@@ -38,6 +38,9 @@
         @apply bg-accent hover:bg-accent-hover
     }
 
+    .active {
+        @apply text-accent
+    }
    
 
 }
