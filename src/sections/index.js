@@ -4,7 +4,7 @@ import Steps from "./Steps";
 import About from "./About";
 import Testimonial from "./Testimonial";
 import Brands from "./Brands";
-
+import News from "./News";
 
 
 export {
@@ -13,5 +13,6 @@ export {
     Steps,
     About,
     Testimonial,
-    Brands
+    Brands,
+    News
 }
