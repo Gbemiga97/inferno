@@ -5,7 +5,10 @@ import About from "./About";
 import Testimonial from "./Testimonial";
 import Brands from "./Brands";
 import News from "./News";
-
+import Work from "./Work";
+import Stats from "./Stats";
+import Contact from "./Contact";
+import Footer from "./Footer";
 
 export {
     Hero,
@@ -14,5 +17,9 @@ export {
     About,
     Testimonial,
     Brands,
-    News
+    News,
+    Work,
+    Stats,
+    Contact,
+    Footer
 }

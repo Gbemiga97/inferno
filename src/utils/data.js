@@ -27,6 +27,29 @@ const links = [
     },
 ]
 
+const work = [
+    {
+        img: images.Work2,
+        title: 'ModernKitchen',
+        subTitle: 'Decor/Architecture'
+    },
+    {
+        img: images.Work1,
+        title: 'ModernKitchen',
+        subTitle: 'Decor/Architecture'
+    },
+    {
+        img: images.Work4,
+        title: 'ModernKitchen',
+        subTitle: 'Decor/Architecture'
+    },
+    {
+        img: images.Work3,
+        title: 'ModernKitchen',
+        subTitle: 'Decor/Architecture'
+    },
+]
+
 
 const steps = [
     {
@@ -71,10 +94,60 @@ const testimonials = [
 ]
 
 
+const stats = [
+    {
+        start: 0,
+        end: 12,
+        statsInfo: 'Years Of experience',
+        border: 'border-r'
+    },
+    {
+        start: 0,
+        end: 85,
+        statsInfo: 'Projects completed',
+        border: 'border-r'
+    },
+    {
+        start: 0,
+        end: 15,
+        statsInfo: 'Active Projects',
+        border: 'border-r'
+    },
+    {
+        start: 0,
+        end: 95,
+        statsInfo: 'Happy Customers',
+        border: 'border-none'
+    },
+]
+
+
+const news = [
+    {
+        img: images.News1,
+        title: 'Let’s Get Solution For Building Construction Work',
+        date: '22 June,2024'
+    },
+    {
+        img: images.News2,
+        title: 'Low Cost Latest Invented Interior Designing Ideas.',
+        date: '24 June,2024'
+    },
+    {
+        img: images.News3,
+        title: 'Best For Any Office & Business Interior Solution',
+        date: '28 June,2024'
+    }
+]
+
+
 const data = {
     links,
     steps,
-    testimonials
+    testimonials,
+    work,
+    stats,
+    news
 }
 
 

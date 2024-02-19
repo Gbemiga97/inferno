@@ -2,7 +2,7 @@ import { images } from "../utils"
 
 const Brands = () => {
   return (
-    <div className="mt-[80px] xl:mt-[200px] relative z-20">
+    <div className="mt-[80px] xl:mt-[150px] relative z-20">
     <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row justify-between items-center gap-12 ">
             <img src={images.Brand1} alt="Brand1" />
