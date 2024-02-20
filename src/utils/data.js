@@ -1,7 +1,5 @@
-import {FiCompass, FiTool } from 'react-icons/fi'
-import {AiFillTool,   } from 'react-icons/ai'
 import images from './images'
-
+import { RiCompasses2Line, RiMagicLine, RiToolsFill } from "react-icons/ri";
 
 
 const links = [
@@ -18,6 +16,10 @@ const links = [
         path: 'testimonials'
     },
     {
+        name: 'Our Work',
+        path: 'work'
+    },
+    {
         name: 'News',
         path: 'news'
     },
@@ -31,39 +33,43 @@ const work = [
     {
         img: images.Work2,
         title: 'ModernKitchen',
-        subTitle: 'Decor/Architecture'
+        subTitle: 'Decor/Architecture',
+        direction: 'right'    
     },
     {
         img: images.Work1,
         title: 'ModernKitchen',
-        subTitle: 'Decor/Architecture'
+        subTitle: 'Decor/Architecture',
+        direction: 'left'    
     },
     {
         img: images.Work4,
         title: 'ModernKitchen',
-        subTitle: 'Decor/Architecture'
+        subTitle: 'Decor/Architecture',
+        direction: 'right'    
     },
     {
         img: images.Work3,
         title: 'ModernKitchen',
-        subTitle: 'Decor/Architecture'
+        subTitle: 'Decor/Architecture',
+        direction: 'left'    
     },
 ]
 
 
 const steps = [
     {
-        icon: <FiCompass />,
+        icon: <RiCompasses2Line /> ,
         title: 'Project Planning',
         desc: 'There are many variations of the passages of lorem Ipsum from available, majority.'
     },
     {
-        icon: <FiTool />,
+        icon: <RiMagicLine />,
         title: 'Gaining Materials',
         desc: 'There are many variations of the passages of lorem Ipsum from available, majority.'
     },
     {
-        icon: <AiFillTool />,
+        icon: <RiToolsFill />,
         title: 'Project Execution',
         desc: 'There are many variations of the passages of lorem Ipsum from available, majority.'
     },
@@ -99,25 +105,29 @@ const stats = [
         start: 0,
         end: 12,
         statsInfo: 'Years Of experience',
-        border: 'border-r'
+        border: 'border-r',
+        direction: 'up'
     },
     {
         start: 0,
         end: 85,
         statsInfo: 'Projects completed',
-        border: 'border-r'
+        border: 'border-r',
+        direction: 'down'
     },
     {
         start: 0,
         end: 15,
         statsInfo: 'Active Projects',
-        border: 'border-r'
+        border: 'border-r',
+        direction: 'up'
     },
     {
         start: 0,
         end: 95,
         statsInfo: 'Happy Customers',
-        border: 'border-none'
+        border: 'border-none',
+        direction: 'down'
     },
 ]
 

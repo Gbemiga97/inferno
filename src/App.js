@@ -15,7 +15,6 @@ function App() {
       <News />
       <Contact />
       <Footer />
-     <div className="h-[3000px]"/>
     </main>
   );
 }

@@ -1,6 +1,8 @@
 import CountUp from "react-countup"
-import { data } from "../utils"
+import { data, variants } from "../utils"
 import { FaPlus } from "react-icons/fa6";
+import { motion } from "framer-motion";
+
 
 const Stats = () => {
   return (
@@ -9,8 +11,13 @@ const Stats = () => {
             {/* grid */}
             <div className="grid lg:grid-cols-4 gap-12">
                 {
-                    data.stats.map(({start, end, statsInfo, border}, i) => (
-                        <div className={`${border} text-center xl:border-accent`}>
+                    data.stats.map(({start, end, statsInfo, border, direction}, i) => (
+                        <motion.div
+                        variants={variants.fadeIn(direction)}
+                        initial='hidden'
+                        whileInView={'show'}
+                        viewport={{once: true}}
+                        className={`${border} text-center xl:border-accent`}>
                         <div className=' text-accent flex items-center justify-center'>
                             <h1 className="h1 text-accent">            
                         <CountUp
@@ -24,7 +31,7 @@ const Stats = () => {
                         <p>
                             {statsInfo}
                         </p>
-                        </div>
+                        </motion.div>
                     ))
                 }
             </div>

@@ -1,7 +1,7 @@
 import { Button } from "../components"
-import { images } from "../utils"
+import { images, variants } from "../utils"
 import {AiFillPhone} from 'react-icons/ai'
-
+import { motion } from "framer-motion"
 
 const About = () => {
   return (
@@ -11,7 +11,12 @@ const About = () => {
             items-center gap-12 xl:gap-[74px]">
 
                 {/* text & phone */}
-                <div className="flex-1 max-w-xl xl:max-w-[410px] flex flex-col items-center xl:items-start gap-8">
+                <motion.div
+                variants={variants.fadeIn('right')}
+                initial='hidden'
+                whileInView={'show'}
+                viewport={{once: true}}
+                className="flex-1 max-w-xl xl:max-w-[410px] flex flex-col items-center xl:items-start gap-8">
                     <h2 className="h2">
                     We Create The Art Of Stylish Living Stylishly
                     </h2>
@@ -32,12 +37,17 @@ const About = () => {
                     </div>
                     {/* button */}
                     <Button />
-                </div>
+                </motion.div>
 
                 {/* image */}
-                <div className="max-w-[453px] mx-auto xl:max-w-none xl:mx-0">
+                <motion.div
+                variants={variants.fadeIn('left')}
+                initial='hidden'
+                whileInView={'show'}
+                viewport={{once: true}}
+                className="max-w-[453px] mx-auto xl:max-w-none xl:mx-0">
                     <img src={images.AboutImg} alt="kitchen" />
-                </div>
+                </motion.div>
             </div>
         </div>
     </section>

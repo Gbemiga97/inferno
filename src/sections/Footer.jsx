@@ -1,11 +1,18 @@
 import { FiFacebook, FiInstagram, FiLinkedin, FiTwitter } from "react-icons/fi"
-import { images } from "../utils"
+import { images, variants } from "../utils"
+import { motion } from "framer-motion"
+
 
 const Footer = () => {
   return (
     <footer className="mt-[80px] xl:mt-[150px] relative z-20">
         <div className="container mx-auto">
-            <div className="flex flex-col xl:flex-row xl:gap-[100px] xl:mb-[150px]">
+            <motion.div
+            variants={variants.fadeIn('right')}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{once: true}}
+            className="flex flex-col xl:flex-row xl:gap-[100px] xl:mb-[150px]">
                 <div className="w-full max-w-[400px] mx-auto mb-8 text-center xl:text-left">
                 {/* logo */}
                 <a href="/" className="flex justify-center xl:justify-start mb-8">
@@ -72,12 +79,17 @@ const Footer = () => {
                   </div>
                 </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
         {/* copyright */}
-        <p className="text-lg text-center py-10 bg-white xl:border-t">
+        <motion.p 
+        variants={variants.fadeIn('up')}
+        initial='hidden'
+        whileInView={'show'}
+        viewport={{once: true}}
+        className="text-lg text-center py-10 bg-white xl:border-t">
             Copyright &copy; Inferno {new Date().getFullYear()}. All rights reserved.
-        </p>
+        </motion.p>
     </footer>
   )
 }
